@@ -1,0 +1,180 @@
+git init
+git add .
+git commit -m "init"
+git branch -M main
+git remote add origin https://github.com/<username>/<namarepo>.git
+git push -u origin main
+
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Pemrograman Web Dasar</title>
+    <style>
+        /* Background dengan gradien */
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header */
+        h1 {
+            text-align: center;
+            padding: 20px;
+            background: #111;
+            color: #00ffcc;
+            text-shadow: 2px 2px 5px black;
+            border-bottom: 4px solid #00ffcc;
+        }
+
+        /* Paragraf */
+        p {
+            text-align: justify;
+            margin: 20px auto;
+            width: 80%;
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        /* Section Box */
+        .section {
+            background: rgba(255, 255, 255, 0.05);
+            margin: 20px auto;
+            width: 80%;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0, 255, 204, 0.4);
+        }
+
+        .section h2 {
+            color: #ffcc00;
+            margin-bottom: 10px;
+            border-left: 6px solid #ffcc00;
+            padding-left: 10px;
+        }
+
+        /* List */
+        ol, ul {
+            margin-left: 40px;
+        }
+
+        li {
+            margin: 6px 0;
+            transition: 0.3s;
+        }
+
+        li:hover {
+            color: #00ffcc;
+            transform: translateX(5px);
+        }
+
+        /* Foto Kegiatan Kampus */
+        .kampus {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .kampus h2 {
+            margin-bottom: 20px;
+        }
+
+        .foto-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .foto-container img {
+            width: 4.57cm;
+            height: 6.85cm;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+            transition: transform 0.3s;
+        }
+
+        .foto-container img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #111;
+            border-top: 4px solid #00ffcc;
+            font-size: 14px;
+            margin-top: 20px;
+            position: relative;
+        }
+
+        /* Instagram di pojok kanan bawah */
+        .instagram {
+            position: absolute;
+            right: 20px;
+            bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 14px;
+        }
+
+        .instagram img {
+            width: 20px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>🌐 Pengalaman 🌐</h1>
+
+    <p>
+       Pengalaman saya selama mengikuti perkuliahan di semester sebelumnya sangat berkesan. Saya belajar banyak hal baru dari berbagai mata kuliah yang menarik dan menantang. Selain itu, saya juga bertemu dengan teman-teman baru dan dosen-dosen yang sangat membantu proses pembelajaran saya di kampus. 
+        <br><br>
+        Biasanya, saya mengerjakan tugas kuliah secara berkelompok maupun individu. Tantangan terbesar adalah membagi waktu antara kuliah, organisasi, dan aktivitas di luar kelas. Meski begitu, saya tetap berusaha untuk aktif dalam kegiatan kampus untuk menambah pengalaman pribadi.
+    </p>
+
+    <div class="section">
+        <h2>📘 Daftar Materi Kuliah Paling Favorit</h2>
+        <ol>
+            <li>Algoritma dan Pemrograman Lanjut</li>
+            <li>Pendidikan Kewarganegaraan</li>
+            <li>Bahasa Indonesia</li>
+            <li>Statistika</li>
+            <li>Aljabar Linear</li>
+        </ol>
+    </div>
+
+    <div class="section">
+        <h2>👨‍🏫 Daftar Dosen Pengampu Matakuliah</h2>
+        <ul type="circle">
+            <li>Khaerul Anam, M.Kom</li>
+            <li>Nisa Dienwati Nuris, M.Sos</li>
+            <li>Riri Narasati, M.Hum</li>
+            <li>Ahmad Faqih, M.Sc</li>
+            <li>Ahmad Faqih, M.Sc</li>
+        </ul>
+    </div>
+
+    <!-- Foto kegiatan kampus -->
+    <div class="kampus">
+        <h2>📸 Dokumentasi Kegiatan Kampus</h2>
+        <div class="foto-container">
+            <img src="WhatsApp Image 2025-08-23 at 15.46.59.jpeg" alt="Kegiatan Kampus">
+            <img src="WhatsApp Image 2025-08-23 at 15.46.59 (1).jpeg" alt="Kegiatan Kampus">
+        </div>
+    </div>
+
+    <footer>
+        © 2025 | Dibuat oleh Ajis Romadhon - Pemrograman Web Dasar
+        <div class="instagram">
+            <img src="logo ig.png" alt="Instagram Logo">
+            <span>@ajsrmdhn</span>
+        </div>
+    </footer>
+</body>
+</html>
